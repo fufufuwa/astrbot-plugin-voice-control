@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+config.json
+*_config.json
+*.log
+state.json
+guard_audit.jsonl
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

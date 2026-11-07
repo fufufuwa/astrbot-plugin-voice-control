@@ -1,0 +1,8 @@
+name: astrbot_plugin_force_voice
+display_name: 语音总控（文字分段 / 语音一整条）
+desc: 接管 AstrBot 的 TTS：文字回复照常分段，语音只发一整条；叫她说时必语音
+version: 2.0.0
+author: anonymous
+repo: local
+support_platforms:
+  - aiocqhttp

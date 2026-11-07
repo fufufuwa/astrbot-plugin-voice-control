@@ -1,0 +1,42 @@
+{
+  "enable": {
+    "description": "启用语音总控",
+    "type": "bool",
+    "default": true,
+    "hint": "开启后由本插件接管语音（需把全局 provider_tts_settings.trigger_probability 设为 0）"
+  },
+  "probability": {
+    "description": "普通回复发语音的概率 (0~1)",
+    "type": "float",
+    "default": 0.03,
+    "hint": "0.03 = 一百条里约三条带语音。叫她说（命中触发词）不受此限制",
+    "slider": {"min": 0.0, "max": 1.0, "step": 0.01}
+  },
+  "keywords": {
+    "description": "触发词（逗号分隔，命中必语音）",
+    "type": "string",
+    "default": "说句话,发语音,来一句,念一下,念给我听,听你声音,听听你的声音,语音条,叫一声,喊我一声,说给我听,用语音,发条语音"
+  },
+  "keep_text": {
+    "description": "概率命中时也附文字",
+    "type": "bool",
+    "default": false,
+    "hint": "关掉则只发语音；打开则语音+文字一起发"
+  },
+  "keyword_keep_text": {
+    "description": "叫她说时也附文字",
+    "type": "bool",
+    "default": false
+  },
+  "respect_session_switch": {
+    "description": "遵守会话语音开关（/语音关 后不发语音）",
+    "type": "bool",
+    "default": true
+  },
+  "keyword_ignore_session_switch": {
+    "description": "命中触发词时无视 /语音关",
+    "type": "bool",
+    "default": false,
+    "hint": "打开后即使用户关过语音，只要说『说句话』仍会发语音"
+  }
+}
